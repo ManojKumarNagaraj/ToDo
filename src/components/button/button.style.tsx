@@ -1,13 +1,9 @@
 import { IButton } from './button.props';
+import { createStyleSheet } from '../../styling';
+import { type } from 'os';
 
-const theme: { [key: string]: string } = {
-    colorPrimary: 'green'
-}
-
-export const buttonStyle = (theme: { [key: string]: string }) => ({
+export const buttonStyle = {
     button: {
-        background: theme.colorPrimary
+        backgroundColor: 'blue'
     }
-})
-
-export type IButtonStyle = ReturnType<typeof buttonStyle>;
+}
